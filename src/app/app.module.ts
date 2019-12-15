@@ -5,6 +5,7 @@ import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { PeopleListComponent } from './people-list/people-list.component';
 import { CourseListComponent } from './course-list/course-list.component';
+import { MyListComponent } from './my-list/my-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatIconModule} from '@angular/material/icon';
@@ -17,7 +18,8 @@ import { DynamicModule } from 'ng-dynamic-component';
     AppComponent,
     MenuBarComponent,
     PeopleListComponent,
-    CourseListComponent
+    CourseListComponent,
+    MyListComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +29,7 @@ import { DynamicModule } from 'ng-dynamic-component';
     FormsModule,
     NoopAnimationsModule,
 
-    DynamicModule.withComponents([PeopleListComponent, CourseListComponent])
+    DynamicModule.withComponents([PeopleListComponent, CourseListComponent, MyListComponent])
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -3,6 +3,7 @@ import { TabService } from '../shared/tab.service';
 import { Tab } from '../shared/tab.model';
 import { PeopleListComponent } from '../people-list/people-list.component';
 import { CourseListComponent } from '../course-list/course-list.component';
+import { MyListComponent } from '../my-list/my-list.component';
 
 @Component({
   selector: 'app-menu-bar',
@@ -19,5 +20,9 @@ export class MenuBarComponent {
 
   public openCourseList() {
     this.tabService.open(new Tab('Course List', CourseListComponent));
+  }
+
+  public openMyList() {
+    this.tabService.open(new Tab('My List', MyListComponent));
   }
 }
